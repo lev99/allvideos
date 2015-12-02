@@ -233,7 +233,15 @@ $tagReplace = array(
 </object>
 ",
 
+/* --- Major 3rd party video providers --- */
+// vk.com - //vk.com/video_ext.php?oid=-44818362&id=164382625&hash=1e1035cb92f33196&hd=2
+"VK" => "<iframe src=\"{SOURCE}\" width=\"{WIDTH}\" height=\"{HEIGHT}\"  frameborder=\"0\"></iframe>"
 
+// myvi.ru - //myvi.ru/player/embed/html/okrMoP2-Hn3eekZeEFZVQl2F8wdkB1_ZIjze6IpK6zLP5q1P-g36MUpBVu08T9WVB0
+"myvi" => "<iframe width=\"{WIDTH}\" height=\"{HEIGHT}\" src=\"{SOURCE}\" frameborder=\"0\" allowfullscreen></iframe>"
+
+// video.sibnet.ru  -  //video.sibnet.ru/shell.php?videoid=1987114
+"myvi" => "<iframe width=\"{WIDTH}\" height=\"{HEIGHT}\" src=\"{SOURCE}\" frameborder=\"0\" scrolling=\"no\" allowfullscreen></iframe>"
 
 /* --- Major 3rd party video providers --- */
 // youtube.com - http://www.youtube.com/watch?v=g5lGNkS5TE0 or https://www.youtube.com/playlist?list=PL0875C16C899A8DE6
