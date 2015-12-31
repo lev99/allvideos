@@ -233,7 +233,21 @@ $tagReplace = array(
 </object>
 ",
 
+/* --- I would like to add to it --- */
+// vk.com 
+"VK" => "<iframe src=\"{SOURCE}\" width=\"{WIDTH}\" height=\"{HEIGHT}\"  style=\"border-width:0px\"></iframe>",
 
+// myvi.ru 
+"Myvi" => "<iframe width=\"{WIDTH}\" height=\"{HEIGHT}\" src=\"{SOURCE}\" style=\"border-width:0px\" allowfullscreen></iframe>",
+
+// sibnet.ru 
+"Sibnet" => "<iframe width=\"{WIDTH}\" height=\"{HEIGHT}\" src=\"//video.sibnet.ru/shell.php?videoid={SOURCE}\" style=\"border-width:0px\" scrolling=\"no\" allowfullscreen></iframe>",
+
+// kivvi.kz 
+"Kiwi" => "<object data=\"http://v.kiwi.kz/v2/{SOURCE}/\" width=\"{WIDTH}\" height=\"{HEIGHT}\" style=\"border-width:0px\" webkitallowfullscreen mozallowfullscreen allowfullscreen title=\"Kiwi player\"></object>",
+
+// mail.ru
+"Mail" => "<iframe src=\"{SOURCE}\" width=\"{WIDTH}\" height=\"{HEIGHT}\" style=\"border-width:0px\"  webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>",
 
 /* --- Major 3rd party video providers --- */
 // youtube.com - http://www.youtube.com/watch?v=g5lGNkS5TE0 or https://www.youtube.com/playlist?list=PL0875C16C899A8DE6
