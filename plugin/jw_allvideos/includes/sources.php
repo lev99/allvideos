@@ -233,7 +233,42 @@ $tagReplace = array(
 </object>
 ",
 
+/* --- I would like to add to it --- */
+// vk.com  - //vk.com/video_ext.php?oid=167947957&id=167693310&hash=a714ffe6371d3552
+"VK" => "<iframe src=\"{SOURCE}\" width=\"{WIDTH}\" height=\"{HEIGHT}\" style=\"border-width:0px;\" allowfullscreen title=\"Video Player\"></iframe>",
 
+// vkontakte - 167947957&id=167693310&hash=a714ffe6371d3552
+"vkontakte" => "
+<iframe src=\"http://vkontakte.ru/video_ext.php?oid={SOURCE}\" width=\"{WIDTH}\" height=\"{HEIGHT}\" frameborder=\"0\"></iframe>",
+
+// myvi.ru - //myvi.ru/player/embed/html/onFjTHvp0ghihf7BJg2fz9YcQ1YfEkqUvMBi0O8UXBIWNlcCsQmI6R6rlbff4Zaik0
+"Myvi" => "<iframe src=\"//myvi.ru/player/embed/html/{SOURCE}\" width=\"{WIDTH}\" height=\"{HEIGHT}\" style=\"border-width:0px;\" allowfullscreen title=\"Video Player\"></iframe>",
+
+// sibnet.ru - //video.sibnet.ru/shell.php?videoid=12345
+"Sibnet" => "<iframe src=\"//video.sibnet.ru/shell.php?videoid={SOURCE}\" width=\"{WIDTH}\" height=\"{HEIGHT}\" style=\"border-width:0px;overflow:hidden;\" allowfullscreen title=\"Video Player\"></iframe>",
+
+// kivvi.kz - http://v.kiwi.kz/v2/iuin3cgi0ap2/
+"Kiwi" => "<iframe src=\"http://v.kiwi.kz/v2/{SOURCE}/\" width=\"{WIDTH}\" height=\"{HEIGHT}\"  style=\"border-width:0px;\" webkitallowfullscreen mozallowfullscreen allowfullscreen title=\"Video Player\"></iframe>",
+
+// mail.ru - https://videoapi.my.mail.ru/videos/embed/community/mir/_groupvideo/2515.html
+"Mailru" => "<iframe src=\"{SOURCE}\" width=\"{WIDTH}\" height=\"{HEIGHT}\" style=\"border-width: 0px;\" webkitallowfullscreen mozallowfullscreen allowfullscreen title=\"Video Player\"></iframe>",
+
+// Mail - https://my.mail.ru/community/mir/video/embed/_groupvideo/2515
+"mail" => "<object width=\"{WIDTH}\" height=\"{HEIGHT}\">
+<param name=\"allowScriptAccess\" value=\"always\" />
+<param name=\"movie\" value=\"http://img.mail.ru/r/video2/player_v2.swf?movieSrc=mail/{SOURCE}\" />
+<embed src=\"http://img.mail.ru/r/video2/player_v2.swf?movieSrc=mail/{SOURCE}\" type=\"application/x-shockwave-flash\" width=\"{WIDTH}\" height=\"{HEIGHT}\" allowScriptAccess=\"always\"></embed></object>",
+
+// Yandex - aleksandnujki/87tgggkwc7.908
+"yandex" => "<object width=\"{WIDTH}\" height=\"{HEIGHT}\"><param name=\"video\" value=\"http://static.video.yandex.ru/lite/{SOURCE}\"/>
+<param name=\"allowFullScreen\" value=\"true\"/>
+<param name=\"scale\" value=\"noscale\"/>
+<embed src=\"http://static.video.yandex.ru/lite/{SOURCE}\" type=\"application/x-shockwave-flash\" width=\"{WIDTH}\" height=\"{HEIGHT}\" allowFullScreen=\"true\" scale=\"noscale\"></embed>
+</object>",
+
+// Rutube  - http://rutube.ru/video/995b21c0ad5a4db6c88adf0331d8826f 
+"rutube" => "
+<iframe src=\"//rutube.ru/play/embed/{SOURCE}\" width=\"{WIDTH}\" height=\"{HEIGHT}\" frameborder=\"0\" webkitAllowFullScreen mozallowfullscreen allowfullscreen></iframe>",
 
 /* --- Major 3rd party video providers --- */
 // youtube.com - http://www.youtube.com/watch?v=g5lGNkS5TE0 or https://www.youtube.com/playlist?list=PL0875C16C899A8DE6
