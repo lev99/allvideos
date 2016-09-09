@@ -142,16 +142,16 @@ class plgContentJw_allvideos extends JPlugin {
 			}
 
 			if ($gzipScripts) {
-				$document->addScript($pluginLivePath.'/includes/js/jwp.js.php?v=4.8.0');
+				$document->addCustomTag('<script src="'.$pluginLivePath.'/includes/js/jwp.js.php?v=4.8.0" async="async"></script>');
 			} else {
-				$document->addScript($pluginLivePath.'/includes/js/behaviour.js?v=4.8.0');
-				$document->addScript($pluginLivePath.'/includes/js/wmvplayer/silverlight.js?v=4.8.0');
-				$document->addScript($pluginLivePath.'/includes/js/wmvplayer/wmvplayer.js?v=4.8.0');
-				$document->addScript($pluginLivePath.'/includes/js/quicktimeplayer/ac_quicktime.js?v=4.8.0');
+				$document->addCustomTag('<script src="'.$pluginLivePath.'/includes/js/behaviour.js?v=4.8.0" async="async"></script>');
+				$document->addCustomTag('<script src="'.$pluginLivePath.'/includes/js/wmvplayer/silverlight.js?v=4.8.0" async="async"></script>');
+				$document->addCustomTag('<script src="'.$pluginLivePath.'/includes/js/wmvplayer/wmvplayer.js?v=4.8.0" async="async"></script>');
+				$document->addCustomTag('<script src="'.$pluginLivePath.'/includes/js/quicktimeplayer/ac_quicktime.js?v=4.8.0" async="async"></script>');
 			}
 
 			if($jwPlayerLoading=='local') {
-				$document->addScript($pluginLivePath.'/includes/js/jwplayer/jwplayer.js?v=4.8.0');
+				$document->addCustomTag('<script src="'.$pluginLivePath.'/includes/js/jwplayer/jwplayer.js?v=4.8.0" async="async"></script>');
 				$document->addScriptDeclaration('
 					/* JW Player API Key */
 					jwplayer.key="'.$jwPlayerAPIKey.'";
